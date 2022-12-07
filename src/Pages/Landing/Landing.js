@@ -9,14 +9,24 @@ const Landing = () => {
       <Canvas />
       <div id={"landing-contents"}>
         <div id={"header-1"}>
-          Hey, I'm <span>Alex</span>.
+          Hello, I'm <span>Alex</span>.
         </div>
 
         <div id={"header-2"}>I'm a Full Stack Developer.</div>
 
-        <div id={"view-work-button"}>
-          <span>View my work</span>
-          <span>----arrow</span>
+        <div id={"center"}>
+          <button id="view-work-btn">
+            <svg
+              width="180px"
+              height="60px"
+              viewBox="0 0 180 60"
+              class="border"
+            >
+              <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+              <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+            </svg>
+            <span id={"button-text"}>View my work</span>
+          </button>
         </div>
       </div>
     </div>

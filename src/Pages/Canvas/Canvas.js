@@ -4,9 +4,6 @@ import { loadFull } from "tsparticles";
 
 const Canvas = () => {
   const particlesInit = useCallback(async (engine) => {
-    // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
-    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-    // starting from v2 you can add only the features you need reducing the bundle size
     await loadFull(engine);
   }, []);
 
@@ -41,11 +38,8 @@ const Canvas = () => {
               resize: true,
             },
             modes: {
-              push: {
-                quantity: 4,
-              },
               repulse: {
-                distance: 300,
+                distance: 450,
                 duration: 0.4,
               },
               connect: {
@@ -57,7 +51,6 @@ const Canvas = () => {
           },
           particles: {
             color: {
-              //1DB954
               value: "#1DB954",
             },
             collisions: {
@@ -83,9 +76,9 @@ const Canvas = () => {
             number: {
               density: {
                 enable: true,
-                area: 500,
+                area: 400,
               },
-              value: 50,
+              value: 60,
             },
             opacity: {
               value: 0.5,
@@ -100,7 +93,6 @@ const Canvas = () => {
           detectRetina: true,
         }}
       />
-      <h1 id="K">???E</h1>
     </Fragment>
   );
 };
