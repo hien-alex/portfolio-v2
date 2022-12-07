@@ -1,11 +1,9 @@
 import { Fragment, useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
-import "./Canvas.css";
 
 const Canvas = () => {
   const particlesInit = useCallback(async (engine) => {
-    console.log(engine);
     // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
     // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
     // starting from v2 you can add only the features you need reducing the bundle size
@@ -13,7 +11,7 @@ const Canvas = () => {
   }, []);
 
   const particlesLoaded = useCallback(async (container) => {
-    await console.log(container);
+    await container;
   }, []);
 
   return (
@@ -59,7 +57,8 @@ const Canvas = () => {
           },
           particles: {
             color: {
-              value: "#00FFFF",
+              //1DB954
+              value: "#1DB954",
             },
             collisions: {
               enable: true,
@@ -67,7 +66,7 @@ const Canvas = () => {
             line_linked: {
               enable: true,
               distance: 100,
-              color: { value: "#FFFFFF" },
+              color: { value: "#1DB954" },
               opacity: 1,
               width: 1,
             },
@@ -84,9 +83,9 @@ const Canvas = () => {
             number: {
               density: {
                 enable: true,
-                area: 1000,
+                area: 500,
               },
-              value: 125,
+              value: 50,
             },
             opacity: {
               value: 0.5,

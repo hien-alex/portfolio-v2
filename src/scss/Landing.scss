@@ -1,0 +1,41 @@
+$theme-color: #04cf3a;
+$theme-color-dark: #0aa132;
+$text-color: #ffffff;
+
+#landing-container {
+  position: "relative";
+}
+
+#landing-contents {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+#header-1 {
+  font-size: 3.5rem;
+  color: $text-color;
+  //   animation-name: moveInRight;
+}
+
+#header-1 span {
+  color: $theme-color;
+}
+
+#header-2 {
+  font-size: 1.5rem;
+  color: $text-color;
+}
+
+#view-work-button {
+  display: flex;
+  background-color: $theme-color-dark;
+  color: $text-color;
+  border: $theme-color-dark solid;
+  margin-top: 1.5rem;
+  font-weight: 700;
+  padding: 1rem;
+  cursor: pointer;
+}
