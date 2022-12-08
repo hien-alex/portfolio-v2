@@ -1,2 +1,28 @@
 @import "Canvas.scss";
 @import "Landing.scss";
+@import "Navbar.scss";
+.test {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+// .App {
+//   overflow: visible;
+// }
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.react-links {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 9;
+}

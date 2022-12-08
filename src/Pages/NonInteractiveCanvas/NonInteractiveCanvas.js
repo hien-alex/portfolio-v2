@@ -2,7 +2,7 @@ import { Fragment, useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 
-const Canvas = () => {
+const NonInteractiveCanvas = () => {
   const particlesInit = useCallback(async (engine) => {
     await loadFull(engine);
   }, []);
@@ -14,7 +14,7 @@ const Canvas = () => {
   return (
     <Fragment>
       <Particles
-        id="tsparticles"
+        id="tsparticles-2"
         init={particlesInit}
         loaded={particlesLoaded}
         options={{
@@ -23,29 +23,24 @@ const Canvas = () => {
               value: "",
             },
           },
+          fullScreen: { enable: false, zIndex: 0 },
           fpsLimit: 120,
           interactivity: {
             detect_on: "window",
             events: {
               onClick: {
-                enable: true,
-                mode: "repulse",
+                enable: false,
               },
               onHover: {
-                enable: true,
-                mode: ["connect"],
+                enable: false,
+                mode: "attract",
               },
               resize: true,
             },
             modes: {
-              repulse: {
-                distance: 450,
-                duration: 0.4,
-              },
-              connect: {
-                radius: 150,
-                distance: 200,
-                opacity: 1,
+              attract: {
+                distance: 500,
+                duration: 0.1,
               },
             },
           },
@@ -57,7 +52,7 @@ const Canvas = () => {
               enable: true,
             },
             line_linked: {
-              enable: true,
+              enable: false,
               distance: 100,
               color: { value: "#1DB954" },
               opacity: 1,
@@ -97,4 +92,4 @@ const Canvas = () => {
   );
 };
 
-export default Canvas;
+export default NonInteractiveCanvas;
