@@ -82,7 +82,7 @@ const NonInteractiveCanvas = () => {
               type: "circle",
             },
             size: {
-              value: 2,
+              value: 1,
             },
           },
           detectRetina: true,

@@ -17,7 +17,7 @@ const Landing = () => {
             activeClass="active"
             to="tsparticles-2"
             smooth={true}
-            duration={400}
+            duration={430}
           >
             <button id="view-work-btn">
               <svg
