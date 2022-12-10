@@ -1,4 +1,5 @@
-$theme-color: #04992c;
+$theme-color: #06c739;
+$dark-theme-color: #04992c;
 $text-color: #ffffff;
 $background-theme-color: #232323;
 
@@ -26,7 +27,7 @@ $background-theme-color: #232323;
 }
 
 #header-1 span {
-  color: $theme-color;
+  color: $dark-theme-color;
 }
 
 #header-2 {
@@ -46,7 +47,7 @@ $background-theme-color: #232323;
   height: 60px;
   cursor: pointer;
   background: $background-theme-color;
-  border: 2.5px solid $theme-color;
+  border: 2.5px solid $dark-theme-color;
   outline: none;
   transition: 1s ease-in-out;
   border-radius: 6px;
@@ -75,7 +76,7 @@ svg {
 
 #view-work-btn span {
   position: relative;
-  color: $theme-color;
+  color: $dark-theme-color;
   font-size: 18px;
   font-weight: 600;
 }

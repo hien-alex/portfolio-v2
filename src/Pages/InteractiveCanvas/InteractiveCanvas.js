@@ -55,7 +55,7 @@ const InteractiveCanvas = () => {
         },
         particles: {
           color: {
-            value: "#1DB954",
+            value: "#06c739",
           },
           collisions: {
             enable: true,
@@ -63,7 +63,7 @@ const InteractiveCanvas = () => {
           line_linked: {
             enable: true,
             distance: 100,
-            color: { value: "#1DB954" },
+            color: { value: "#06c739" },
             opacity: 1,
             width: 1,
           },

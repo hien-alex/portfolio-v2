@@ -1,5 +1,6 @@
 $text-color: #ffffff;
-$theme-color: #04992c;
+$dark-theme-color: #04992c;
+$theme-color: #06c739;
 
 #about-container {
   position: relative;
@@ -32,7 +33,7 @@ $theme-color: #04992c;
 #about-header:before {
   position: absolute;
   content: "";
-  border-bottom: 22px solid $theme-color;
+  border-bottom: 22px solid $dark-theme-color;
   width: 10rem;
   display: block;
   margin: 0 auto;
