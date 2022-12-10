@@ -1,6 +1,7 @@
 $text-color: #ffffff;
 $dark-theme-color: #04992c;
 $theme-color: #06c739;
+$background-theme-color: #232323;
 
 #about-container {
   position: relative;
@@ -50,24 +51,17 @@ $theme-color: #06c739;
   display: flex;
   justify-content: space-evenly;
   overflow: hidden;
+  margin-top: 2.5%;
 }
 
-#about-left {
+#about-intro {
   position: relative;
   color: $text-color;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-left: 15%;
-  margin-right: 3rem;
-  height: 100%;
-}
-
-#about-right {
-  color: $text-color;
-  margin: 3rem;
-  margin-left: 3rem;
-  margin-right: 15%;
+  margin-right: 10%;
   height: 100%;
 }
 
@@ -79,4 +73,50 @@ $theme-color: #06c739;
 
 .cls-1 {
   fill: none;
+}
+
+#about-skills {
+  display: flex;
+  margin-right: 15%;
+  margin-left: 5%;
+  color: $text-color;
+}
+
+.skills-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.skill-container {
+  height: 100px;
+  width: 155px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px transparent;
+  margin: 1rem;
+  color: $text-color;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.25rem;
+  padding: 0.25rem;
+  background-image: linear-gradient(
+      $background-theme-color,
+      $background-theme-color
+    ),
+    radial-gradient(circle at top, #c7f0bd, #04992c);
+  border-radius: 25px;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.skill-icon-container {
+  width: 45%;
+  height: 60%;
+  margin-top: 0.75rem;
+}
+
+.skill-name {
+  margin-top: 0.25rem;
 }

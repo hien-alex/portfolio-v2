@@ -3,7 +3,6 @@
     <linearGradient  id="gradient-1" x1="0%" y1="0%" x2="100%" y2="90%">
       <stop offset="20%" style="stop-color:#53d27e;stop-opacity:1" />
       <stop offset="100%" style="stop-color:#04992c;stop-opacity:1" />
-      <!-- <stop offset="100%" style="stop-color:#04992c;stop-opacity:1" /> -->
     </linearGradient>
   </defs>
   <path d="M16,8a5,5,0,1,0,5,5A5,5,0,0,0,16,8Zm0,8a3,3,0,1,2,3-3A3.0034,3.0034,0,0,1,16,16Z"/>
