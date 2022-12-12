@@ -1,5 +1,4 @@
-import NonInteractiveCanvas from "../NonInteractiveCanvas/NonInteractiveCanvas";
-import avatar from "../../Assets/user--avatar.svg";
+import avatar from "../../Assets/Images/user--avatar.svg";
 import cssIcon from "../../Assets/Images/css.png";
 import expressIcon from "../../Assets/Images/express.png";
 import gitIcon from "../../Assets/Images/git.png";
@@ -10,6 +9,7 @@ import mySQLIcon from "../../Assets/Images/mysql.png";
 import nodeIcon from "../../Assets/Images/node.png";
 import reactIcon from "../../Assets/Images/react.png";
 import sassIcon from "../../Assets/Images/sass.png";
+import NonInteractiveCanvas from "../NonInteractiveCanvas/NonInteractiveCanvas";
 
 const About = () => {
   return (

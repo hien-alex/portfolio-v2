@@ -1,0 +1,60 @@
+$background-theme-color: #232323;
+$text-color: #ffffff;
+$dark-theme-color: #04992c;
+$theme-color: #06c739;
+
+#projects-container {
+  top: 3rem;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 300vh;
+  background-color: $background-theme-color;
+}
+
+.projects-section-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: end;
+  width: 100%;
+  height: 75vh;
+}
+
+.projects-section-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: end;
+  width: 100%;
+  height: 75vh;
+}
+
+#projects-header {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $text-color;
+  position: relative;
+  font-size: 3.5rem;
+  font-weight: 700;
+  z-index: 999;
+}
+
+#projects-header:before {
+  position: absolute;
+  content: "";
+  border-bottom: 22px solid $dark-theme-color;
+  width: 13rem;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  left: 2rem;
+  top: 4.4rem;
+  z-index: -1;
+}
+
+#list-of-projects {
+  margin-top: -3%;
+}

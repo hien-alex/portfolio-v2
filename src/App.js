@@ -2,6 +2,7 @@ import "./scss/Main.scss";
 import Landing from "./Pages/Landing/Landing.js";
 import Navbar from "./Pages/Navbar/Navbar";
 import About from "./Pages/About/About";
+import Projects from "./Pages/Projects/Projects";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Landing />
       <Navbar />
       <About />
+      <Projects />
     </div>
   );
 }

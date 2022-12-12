@@ -2,6 +2,10 @@
 @import "Landing.scss";
 @import "Navbar.scss";
 @import "About.scss";
+@import "Projects.scss";
+@import "SingleProject.scss";
+
+$background-theme-color: #232323;
 
 * {
   margin: 0;
@@ -12,6 +16,9 @@ html {
   scroll-behavior: smooth;
 }
 
+.App {
+  background-color: $background-theme-color;
+}
 // .react-links {
 //   width: 100%;
 //   height: 100%;

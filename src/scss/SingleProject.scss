@@ -1,0 +1,26 @@
+$theme-color: #06c739;
+$dark-theme-color: #04992c;
+$text-color: #ffffff;
+
+.project-container-left {
+  width: 55%;
+  height: 85%;
+  margin-left: 15%;
+  background-color: $dark-theme-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.project-container-right {
+  margin-right: 15%;
+  width: 55%;
+  height: 85%;
+  right: 0;
+  background-color: $dark-theme-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
