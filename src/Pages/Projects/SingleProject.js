@@ -1,3 +1,5 @@
+import pathfinderIMG from "../../Assets/Images/Pathfinder.png";
+
 const SingleProject = (props) => {
   const projectSectionSide = props.projectSectionSide;
   return (
@@ -8,7 +10,7 @@ const SingleProject = (props) => {
           : "project-container-left"
       }
     >
-      <h1>HENRLHNJE</h1>
+      <img className={"project-img"} src={pathfinderIMG} />
     </div>
   );
 };
