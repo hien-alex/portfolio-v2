@@ -1,0 +1,88 @@
+$background-theme-color: #232323;
+$text-color: #ffffff;
+$dark-theme-color: #04992c;
+$theme-color: #06c739;
+
+#contact-container {
+  top: 5rem;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 90vh;
+  background-color: $background-theme-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact-header {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $text-color;
+  position: relative;
+  font-size: 3.5rem;
+  font-weight: 700;
+  z-index: 999;
+}
+
+#contact-header:before {
+  position: absolute;
+  content: "";
+  border-bottom: 22px solid $dark-theme-color;
+  width: 13rem;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  left: 2rem;
+  top: 4.4rem;
+  z-index: -1;
+}
+
+#contact-content {
+  margin-top: 3rem;
+  width: 500px;
+}
+
+#contact-text {
+  color: $text-color;
+}
+
+#contact-form {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form-input {
+  margin-top: 0.75rem;
+  font-size: 1rem;
+  padding: 0.75rem;
+  border: none;
+  background-color: #2e2e2b;
+  color: $text-color;
+}
+
+#contact-form input {
+  height: 1rem;
+}
+
+#contact-form textarea {
+  height: 7rem;
+  resize: none;
+}
+
+#contact-form-footer {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#contact-form-footer button {
+  background-color: $dark-theme-color;
+  border: none;
+  height: 1.5rem;
+  width: 5rem;
+  letter-spacing: 1px;
+}
