@@ -41,6 +41,7 @@ $theme-color: #06c739;
 }
 
 #contact-content {
+  position: relative;
   margin-top: 3rem;
   width: 500px;
 }
@@ -53,6 +54,7 @@ $theme-color: #06c739;
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .contact-form-input {
@@ -74,17 +76,45 @@ $theme-color: #06c739;
 }
 
 #contact-form-footer {
+  position: relative;
   margin-top: 0.75rem;
   display: flex;
   justify-content: flex-end;
 }
 
-#contact-form-footer button {
-  background-color: $dark-theme-color;
+#contact-form-submit {
+  background-color: transparent;
   border: none;
-  height: 3rem;
-  width: 7.5rem;
-  letter-spacing: 1px;
-  font-size: 1.25rem;
+  height: 1.75rem;
+  width: 6.5rem;
+  letter-spacing: 0.2rem;
+  font-size: 1rem;
   font-weight: 600;
+  cursor: pointer;
+  z-index: 2;
+  position: relative;
+  color: $text-color;
+}
+
+#contact-form-submit:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background-color: $dark-theme-color;
+  width: 100%;
+  bottom: 1px;
+  display: block;
+  transform-origin: bottom;
+  transition: all 0.25s;
+  z-index: -1;
+}
+
+#contact-form-submit:hover:after {
+  height: 100%;
+  position: absolute;
+  bottom: 1px;
+}
+
+#contact-form-footer button:hover {
+  color: black;
 }
