@@ -32,8 +32,12 @@ const SingleProject = (props) => {
           <h1>{projectTitle}</h1>
           <div className="single-project-info">{projectInfo}</div>
           <div className="single-project-buttons-container">
-            <button className="single-project-button">TRY APP</button>
-            <button className="single-project-button">LEARN MORE</button>
+            <button id="try-app-button" className="single-project-button">
+              TRY APP
+            </button>
+            <button id="learn-more-button" className="single-project-button">
+              LEARN MORE
+            </button>
           </div>
         </div>
       }

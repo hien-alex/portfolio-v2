@@ -23,9 +23,9 @@ const Projects = () => {
           <SingleProject
             imgSrc={lexagramIMG}
             projectSectionSide={"right"}
-            projectTitle={"React Visual Pathfinder"}
+            projectTitle={"Lexagram"}
             projectInfo={
-              "Visualization of graph traversals utilizing different search algorithms."
+              "Platform for users to post unique photos of their life."
             }
           />
         </div>

@@ -28,6 +28,11 @@ $project-container-color: #379137;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  transition: all 0.2s;
+}
+
+.project-container-left:hover {
+  transform: scale(0.95);
 }
 
 .project-container-right {
@@ -40,6 +45,11 @@ $project-container-color: #379137;
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
+  transition: all 0.2s;
+}
+
+.project-container-right:hover {
+  transform: scale(0.95);
 }
 
 .project-img {
@@ -72,10 +82,50 @@ $project-container-color: #379137;
   flex-direction: column;
 }
 
+#learn-more-button {
+  width: 120.75px;
+}
+
+#try-app-button {
+  width: 85px;
+}
+
 .single-project-button {
-  width: 30%;
-  height: 3rem;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  height: 35px;
   margin-top: 1.5rem;
+  letter-spacing: 0.2rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  z-index: 2;
+  position: relative;
+  color: $text-color;
+}
+
+.single-project-button:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background-color: $dark-theme-color;
+  width: 100%;
+  bottom: 1px;
+  display: block;
+  transform-origin: bottom;
+  transition: all 0.25s;
+  z-index: -1;
+}
+
+.single-project-button:hover:after {
+  height: 100%;
+  position: absolute;
+  bottom: 1px;
+}
+
+.single-project-button:hover {
+  color: black;
 }
 
 @media only screen and (max-width: 1250px) {
@@ -88,11 +138,18 @@ $project-container-color: #379137;
     height: 70%;
   }
   .project-info-right {
-    top: 3rem;
+    top: 2.5rem;
+    margin-left: -2.5rem;
+    margin-right: 1rem;
+  }
+  .project-info-left {
+    top: 2.5rem;
+    margin-right: -4.25rem;
+    margin-left: 2rem;
   }
   .single-project-button {
-    width: 30%;
-    height: 2.5rem;
+    width: 40%;
+    height: 2rem;
     margin-top: 1rem;
   }
 }
