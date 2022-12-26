@@ -3,10 +3,26 @@ $dark-theme-color: #04992c;
 $text-color: #ffffff;
 $project-container-color: #379137;
 
-.project-container-left {
-  width: 50%;
+.single-project-container {
+  position: relative;
+  width: 100%;
+  display: flex;
   height: 87.5%;
-  margin-left: 15%;
+}
+
+.single-project-container-reverse {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  height: 87.5%;
+}
+
+.project-container-left {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  margin-left: 10%;
   background: linear-gradient(#6cda89, #22c94f, #379137);
   display: flex;
   flex-direction: column;
@@ -15,15 +31,16 @@ $project-container-color: #379137;
 }
 
 .project-container-right {
-  margin-right: 15%;
+  position: relative;
+  margin-right: 10%;
   width: 50%;
-  height: 87.5%;
-  right: 0;
+  height: 100%;
   background: linear-gradient(#6cda89, #22c94f, #379137);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
+  // margin-left: auto;
 }
 
 .project-img {
@@ -31,15 +48,54 @@ $project-container-color: #379137;
   height: 75%;
 }
 
-@media only screen and (max-width: 1600px) {
+.project-info-right {
+  position: relative;
+  color: $text-color;
+  top: 8rem;
+  margin-left: -4.5rem;
+}
+
+.project-info-left {
+  position: relative;
+  color: $text-color;
+  white-space: nowrap;
+  top: 8rem;
+  margin-left: 10%;
+  margin-right: -5rem;
+}
+
+.single-project-info {
+  margin-top: 1rem;
+  font-weight: 600;
+  font-size: 1.15rem;
+}
+
+.single-project-buttons-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.single-project-button {
+  width: 30%;
+  height: 3rem;
+  margin-top: 1.5rem;
+}
+
+@media only screen and (max-width: 1250px) {
   .project-container-left {
-    margin-left: 10%;
     width: 70%;
     height: 70%;
   }
   .project-container-right {
-    margin-right: 10%;
     width: 70%;
     height: 70%;
+  }
+  .project-info-right {
+    top: 3rem;
+  }
+  .single-project-button {
+    width: 30%;
+    height: 2.5rem;
+    margin-top: 1rem;
   }
 }
