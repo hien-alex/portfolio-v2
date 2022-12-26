@@ -40,7 +40,6 @@ $project-container-color: #379137;
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  // margin-left: auto;
 }
 
 .project-img {
@@ -58,9 +57,7 @@ $project-container-color: #379137;
 .project-info-left {
   position: relative;
   color: $text-color;
-  white-space: nowrap;
   top: 8rem;
-  margin-left: 10%;
   margin-right: -5rem;
 }
 
