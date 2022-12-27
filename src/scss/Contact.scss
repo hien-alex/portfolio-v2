@@ -2,6 +2,7 @@ $background-theme-color: #232323;
 $text-color: #ffffff;
 $dark-theme-color: #04992c;
 $theme-color: #06c739;
+$fail-msg-color: #c70606;
 
 #contact-container {
   padding-top: 7rem;
@@ -75,7 +76,7 @@ $theme-color: #06c739;
   resize: none;
 }
 
-#contact-form-footer {
+.contact-form-footer {
   position: relative;
   margin-top: 0.75rem;
   display: flex;
@@ -117,6 +118,14 @@ $theme-color: #06c739;
 
 #contact-form-footer button:hover {
   color: black;
+}
+
+#contact-success-msg {
+  color: $dark-theme-color;
+}
+
+#contact-fail-msg {
+  color: $fail-msg-color;
 }
 
 @media only screen and (max-height: 850px) {
