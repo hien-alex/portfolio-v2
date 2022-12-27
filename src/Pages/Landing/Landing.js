@@ -15,7 +15,7 @@ const Landing = () => {
         <div id={"center"}>
           <Link
             activeClass="active"
-            to="tsparticles-2"
+            to="projects-container"
             smooth={true}
             duration={430}
           >

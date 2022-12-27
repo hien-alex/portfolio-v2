@@ -4,7 +4,7 @@ $dark-theme-color: #04992c;
 $theme-color: #06c739;
 
 #contact-container {
-  top: 5rem;
+  padding-top: 7rem;
   position: relative;
   display: block;
   width: 100%;
@@ -117,4 +117,22 @@ $theme-color: #06c739;
 
 #contact-form-footer button:hover {
   color: black;
+}
+
+@media only screen and (max-height: 850px) {
+  #contact-container {
+    height: 80vh;
+  }
+}
+
+@media only screen and (max-height: 700px) {
+  #contact-container {
+    height: 90vh;
+  }
+}
+
+@media only screen and (max-height: 600px) {
+  #contact-container {
+    height: 110vh;
+  }
 }

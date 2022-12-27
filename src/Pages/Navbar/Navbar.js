@@ -11,17 +11,35 @@ const Navbar = () => {
           smooth={true}
           duration={300}
         >
-          <a href="#tsparticles-2">Home</a>
+          <a href="landing-container">Home</a>
         </Link>
-        <li class={"nav-item"}>
-          <a href="">About</a>
-        </li>
-        <li class={"nav-item"}>
-          <a href="">Projects</a>
-        </li>
-        <li class={"nav-item"}>
-          <a href="">Contact</a>
-        </li>
+        <Link
+          class={"nav-item"}
+          activeClass="active"
+          to="about-container"
+          smooth={true}
+          duration={300}
+        >
+          <a href="about-container">About</a>
+        </Link>
+        <Link
+          class={"nav-item"}
+          activeClass="active"
+          to="projects-container"
+          smooth={true}
+          duration={300}
+        >
+          <a href="projects-header">Projects</a>
+        </Link>
+        <Link
+          class={"nav-item"}
+          activeClass="active"
+          to="footer-container"
+          smooth={true}
+          duration={300}
+        >
+          <a href="footer-container">Contact</a>
+        </Link>
       </ul>
     </div>
   );

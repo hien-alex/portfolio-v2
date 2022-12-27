@@ -1,0 +1,80 @@
+$theme-color: #06c739;
+$dark-theme-color: #04992c;
+$text-color: #ffffff;
+$project-container-color: #379137;
+$footer-color: #2e2e2b;
+
+#footer-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 17.5vh;
+  background-color: $footer-color;
+  width: 100%;
+  bottom: 0px;
+}
+
+#footer-icons-container {
+  width: 20%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer-copyright {
+  position: relative;
+  color: $text-color;
+  font-size: 10px;
+}
+
+.footer-icon {
+  position: relative;
+  height: 2.5rem;
+  width: 2.5rem;
+  margin: 30% 10px 10px 10px;
+  transition: all 0.2s;
+  -webkit-filter: invert(1);
+  filter: invert(1);
+}
+
+.footer-icon:hover {
+  transform: scale(1.25);
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-1rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#footer-up-arrow {
+  width: 35px;
+  height: 35px;
+  margin-top: -100%;
+  padding: 3px;
+  background-color: $dark-theme-color;
+  cursor: pointer;
+}
+
+#footer-up-arrow:hover {
+  animation-name: bounce;
+  animation-duration: 1.25s;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+}
+
+#footer-content-container {
+  margin-top: -35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
