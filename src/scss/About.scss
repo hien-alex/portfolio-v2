@@ -130,9 +130,36 @@ $background-theme-color: #232323;
 
 @media only screen and (max-height: 655px) {
   #about-container {
-    height: 150vh;
+    height: 205vh;
+  }
+
+  #about-info {
+    height: 100%;
     justify-content: center;
     justify-items: center;
     align-items: center;
+    flex-direction: column;
+  }
+
+  #about-skills {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-height: 575px) {
+  #about-container {
+    height: 250vh;
+  }
+
+  #about-info {
+    height: 100%;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #about-skills {
+    margin: 0;
   }
 }
