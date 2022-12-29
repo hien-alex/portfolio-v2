@@ -28,15 +28,7 @@ const About = () => {
               development courses such as object oriented programming,
               procedural programming, algorithms, and data structures. In those
               courses, I've gained a thorough understanding of languages such as
-              Python, Java, and Javascript. However, I do have some experience
-              in webdevelopment and databases, utilizing React, SQL, and R. As
-              of now, my main focus is on expanding my abilities to apply
-              algorithms and data structures to practical situations. I have
-              created small projects utilizing web development with common
-              algorithms but programming in Python is what I'm most familiar
-              with. At this moment I'm excited to apply what I've learned and to
-              find opportunities will teach me what it takes to be a software
-              developer!
+              Python, Java, and Javascript.
             </div>
           </div>
           <div id={"about-skills"}>

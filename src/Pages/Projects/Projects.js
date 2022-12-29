@@ -16,6 +16,8 @@ const Projects = () => {
             projectInfo={
               "Visualization of graph traversals utilizing different search algorithms."
             }
+            projectURL={"https://ahien-pathfinder-project.netlify.app/"}
+            projectGithub={"https://github.com/hien-alex/pathfinder_visual"}
           />
         </div>
 
@@ -27,6 +29,8 @@ const Projects = () => {
             projectInfo={
               "Platform for users to post unique photos of their life."
             }
+            projectURL={"https://ahien-lexagram.netlify.app/"}
+            projectGithub={"https://github.com/hien-alex/Lexagram"}
           />
         </div>
 
@@ -38,6 +42,8 @@ const Projects = () => {
             projectInfo={
               "Visualization of graph traversals utilizing different search algorithms."
             }
+            projectURL={"https://ahien-restaurant-reviews-project.netlify.app/"}
+            projectGithub={"https://github.com/hien-alex/MERN-APP"}
           />
         </div>
       </div>

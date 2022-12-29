@@ -19,7 +19,7 @@ $background-theme-color: #232323;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 90vh;
+  height: 90%;
   top: 4rem;
 }
 
@@ -112,6 +112,7 @@ $background-theme-color: #232323;
 }
 
 .skill-icon-container {
+  position: relative;
   width: 45%;
   height: 60%;
   margin-top: 0.75rem;
@@ -119,4 +120,19 @@ $background-theme-color: #232323;
 
 .skill-name {
   margin-top: 0.25rem;
+}
+
+@media only screen and (max-height: 740px) {
+  #about-container {
+    height: 125vh;
+  }
+}
+
+@media only screen and (max-height: 655px) {
+  #about-container {
+    height: 150vh;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+  }
 }
