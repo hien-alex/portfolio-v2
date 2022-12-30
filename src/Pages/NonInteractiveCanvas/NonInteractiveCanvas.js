@@ -1,4 +1,4 @@
-import { Fragment, useCallback } from "react";
+import { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 
@@ -22,7 +22,7 @@ const NonInteractiveCanvas = () => {
             value: "",
           },
         },
-        fullScreen: { enable: false, zIndex: 0 },
+        fullScreen: { enable: true, zIndex: 0 },
         fpsLimit: 120,
         interactivity: {
           detect_on: "window",
@@ -81,7 +81,7 @@ const NonInteractiveCanvas = () => {
             type: "circle",
           },
           size: {
-            value: 1,
+            value: 1.5,
           },
         },
         detectRetina: true,

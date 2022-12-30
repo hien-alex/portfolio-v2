@@ -2,6 +2,7 @@ import NonInteractiveCanvas from "../NonInteractiveCanvas/NonInteractiveCanvas";
 import SingleProject from "./SingleProject";
 import pathfinderIMG from "../../Assets/Images/Pathfinder.png";
 import lexagramIMG from "../../Assets/Images/Lexagram.png";
+import restaurantReviews from "../../Assets/Images/restaurants-review.png";
 
 const Projects = () => {
   return (
@@ -36,11 +37,11 @@ const Projects = () => {
 
         <div className={"projects-section-left"}>
           <SingleProject
-            imgSrc={lexagramIMG}
+            imgSrc={restaurantReviews}
             projectSectionSide={"left"}
-            projectTitle={"React Visual Pathfinder"}
+            projectTitle={"MERN Restaurant Reviews"}
             projectInfo={
-              "Visualization of graph traversals utilizing different search algorithms."
+              "Application built with MERN stack. Users can leave reviews for restaurants."
             }
             projectURL={"https://ahien-restaurant-reviews-project.netlify.app/"}
             projectGithub={"https://github.com/hien-alex/MERN-APP"}

@@ -9,12 +9,10 @@ import mySQLIcon from "../../Assets/Images/mysql.png";
 import nodeIcon from "../../Assets/Images/node.png";
 import reactIcon from "../../Assets/Images/react.png";
 import sassIcon from "../../Assets/Images/sass.png";
-import NonInteractiveCanvas from "../NonInteractiveCanvas/NonInteractiveCanvas";
 
 const About = () => {
   return (
     <div id={"about-container"}>
-      <NonInteractiveCanvas />
       <div id={"about-contents"}>
         <h1 id={"about-header"}>About</h1>
         <div id={"about-info"}>

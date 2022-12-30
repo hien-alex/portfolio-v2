@@ -23,7 +23,7 @@ const InteractiveCanvas = () => {
             value: "",
           },
         },
-        fullScreen: { enable: false, zIndex: 0 },
+        fullScreen: { enable: false, zIndex: 10 },
         fpsLimit: 120,
         interactivity: {
           detect_on: "window",
