@@ -19,14 +19,13 @@ const About = () => {
           <div id={"about-intro"}>
             <img id={"about-avatar"} src={avatar}></img>
             <div>
-              Hi I'm Alex! At this moment, I'm looking for entry / junior level
-              oppurtunities in software development. I'm a recent graduate of
-              BCITs Computer Science program, majoring in Computer Systems
-              Technology. Much of my education was composed of software
-              development courses such as object oriented programming,
-              procedural programming, algorithms, and data structures. In those
-              courses, I've gained a thorough understanding of languages such as
-              Python, Java, and Javascript.
+              Hi I'm Alex! Fully committed to the idea of progress over
+              perfection, I'm a full stack developer with a deep passion for
+              software and web development. The endless combination of logic,
+              creativity, technologies and never running out of new things to
+              discover, drives my excitement as a developer. When I'm not
+              infront of my computer I like to spend time catching up with
+              friends and keeping fit.
             </div>
           </div>
           <div id={"about-skills"}>
