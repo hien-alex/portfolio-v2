@@ -23,7 +23,7 @@ const NonInteractiveCanvas = () => {
           },
         },
         fullScreen: { enable: true, zIndex: 0 },
-        fpsLimit: 120,
+        fpsLimit: 30,
         interactivity: {
           detect_on: "window",
           events: {
@@ -72,7 +72,7 @@ const NonInteractiveCanvas = () => {
               enable: true,
               area: 400,
             },
-            value: 60,
+            value: 40,
           },
           opacity: {
             value: 0.5,
